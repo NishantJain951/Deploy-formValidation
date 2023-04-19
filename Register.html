@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="Register.css">
+  <style type="text/css">
+    #success_message {
+      display: none;
+    }
+  </style>
+  <title>Registration Form using HTML</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <form class="well form-horizontal" action=" " method="post" id="contact_form" autocomplete="off"
+      onsubmit="return false">
+      <fieldset>
+
+        <!-- Form Name -->
+        <legend>
+          <center>
+            <h2><b>Registration Form</b></h2>
+          </center>
+        </legend><br>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">First Name</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="first_name" id="firstName" placeholder="First Name" class="form-control" type="text"
+                required>
+            </div><span id="first-name-err"></span>
+          </div>
+        </div>
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Last Name</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="last_name" id="lastName" placeholder="Last Name" class="form-control" type="text" required>
+            </div><span id="last-name-err"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Gender</label>
+          <div class="col-md-4 inputGroupContainer" id="gender">
+            <input class="form-check-input" type="radio" id="male" name="gender" value="M" required>
+            <label class="form-check-label" for="m_gender">Male</label>
+
+            <input class="form-check-input" type="radio" id="female" name="gender" value="F" required>
+            <label class="form-check-label" for="m_gender">Female</label>
+
+            <input class="form-check-input" type="radio" id="other" name="gender" value="o" required>
+            <label class="form-check-label" for="m_gender">other</label>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">E-Mail</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+              <input name="email" id="emailAddress" placeholder="E-Mail Address" class="form-control" type="text"
+                required>
+            </div><span id="email-err"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Password</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="user_password" id="password" placeholder="Password" class="form-control" type="password"
+                required>
+            </div><span id="password-err"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Confirm Password</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="confirm_password" id="confirmPassword" placeholder="Confirm Password" class="form-control"
+                type="password" required>
+            </div><span id="confirm-password-err"></span><span id="confirm-password-match"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">Username</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input name="user_name" id="userName" placeholder="Username" class="form-control" type="text" required
+                readonly>
+            </div><span id="user-name-err"></span>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label for="hobbies" class="col-md-4 control-label"><strong>Hobbies</strong></label>
+          <div class="col-md-6 inputGroupContainer">
+            <input class="form-check-input" type="checkbox" value="Athelitcs" id="Athelitcs" name="hobbies">
+            <label class="form-check-label" for="Athelitcs">
+              Athelitcs
+            </label>
+
+            <input class="form-check-input" type="checkbox" value="Basketball" id="Basketball" name="hobbies">
+            <label class="form-check-label" for="Basketball">
+              Basketball
+            </label>
+
+            <input class="form-check-input" type="checkbox" value="Tabletennies" id="Tabletennies" name="hobbies">
+            <label class="form-check-label" for="Tabletennies">
+              Table Tennies
+            </label>
+
+            <input class="form-check-input" type="checkbox" value="Football" id="Football" name="hobbies">
+            <label class="form-check-label" for="Football">
+              Football
+            </label>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">Address</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+
+              <textarea class="form-control" id="address" required></textarea>
+            </div><span id="address-err"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">State</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="department" id="select1" onchange="populate(this.id,'select2')"
+                class="form-control selectpicker" required>
+                <option value="">Select your State</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+              </select>
+            </div><span id="select-state-err"></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">City</label>
+          <div class="col-md-4 selectContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select name="department" id="select2" onchange="population('select1',this.id)" class="form-control selectpicker" required disabled>
+                <option value="">Select your City</option>
+              </select>
+            </div><span id="select-city-err"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label">Pin Code</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-road"></i></span>
+              <input name="pinCode" id="pinCode" placeholder="Pin Code" class="form-control" type="text"
+                onkeypress="return pinCodeValidation(event)" required>
+            </div><span id="pin-code-err"></span>
+          </div>
+        </div>
+        <!-- Text input-->
+
+        <div class="form-group">
+          <label class="col-md-4 control-label">Contact No.</label>
+          <div class="col-md-4 inputGroupContainer">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+              <input name="Contact No." id="mobileNumber" placeholder="(+91)" class="form-control" type="text"
+                onkeypress="return mobileNumberValidation(event)" required>
+            </div><span id="mobile-number-err"></span>
+          </div>
+        </div>
+
+        <!-- Select Basic -->
+
+        <!-- Success message -->
+        <div class="alert alert-success" role="alert" id="success_message">Success <i
+            class="glyphicon glyphicon-thumbs-up"></i>Success!.</div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label"></label>
+          <div class="col-md-4"><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit"
+              class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT<span
+                class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp></button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+  </div><!-- /.container -->
+  <script src="Register.js"></script>
+</body>
+
+</html>

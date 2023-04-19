@@ -1,0 +1,48 @@
+#first-name-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#last-name-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#user-name-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#password-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#confirm-password-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#email-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#address-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#pin-code-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#mobile-number-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#confirm-password-match{
+  color: green;
+  font-size: smaller;
+}
+#select-city-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
+#select-state-err{
+  color: rgb(170, 8, 8);
+  font-size: smaller;
+}
